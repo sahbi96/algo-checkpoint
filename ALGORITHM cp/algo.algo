@@ -1,0 +1,19 @@
+ALGORITHM length_name
+VAR
+    str : string = "hi my name is sahbi";
+    count : integer = 0;
+    nb_vowels : INTEGER = 0;
+    nbwords : INTEGER :=1;
+BEGIN
+    FOR i FROM 0 TO str.length   DO
+        if str [i] = "o"or"a"or "e" or "u" or "y" or "i" then
+        nb_vowels :=nb_vowels + 1
+        else IF (str[i] = " ") THEN
+            nbwords := nbwrods + 1
+        END_IF
+
+    END_FOR
+    writle ("nbwords", nbwords)
+    write ("nb_vowels",nb_vowels)
+    write ("str.length", str.length)
+END
